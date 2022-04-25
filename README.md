@@ -28,11 +28,9 @@ Create a `.env.local` in the root directory and copy the values from `.okta.env`
 ```JSON
 OKTA_CLIENTID={yourClientId}
 OKTA_CLIENTSECRET={yourClientSecret}
-OKTA_DOMAIN={yourOktaIssuer}
+OKTA_ISSUER={yourOktaIssuer}
 NEXTAUTH_URL=http://localhost:3000
 ```
-
-**NOTE**: The `{yourOktaIssuer}` value should not have an `https://` prefix. For example, `dev-133337.okta.com/oauth2/default`.
 
 Run the application:
 
