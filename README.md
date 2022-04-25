@@ -30,7 +30,10 @@ OKTA_CLIENTID={yourClientId}
 OKTA_CLIENTSECRET={yourClientSecret}
 OKTA_ISSUER={yourOktaIssuer}
 NEXTAUTH_URL=http://localhost:3000
+VINTED_SERVICE_URL=http://localhost:3001/okta-auth
 ```
+
+This last one is the Vinted Service that will receive the Okta token for further validation.
 
 Run the application:
 
