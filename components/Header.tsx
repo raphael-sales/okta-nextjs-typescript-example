@@ -1,8 +1,7 @@
-import { signIn, signOut, useSession } from 'next-auth/client'
+import { useSession, signIn, signOut } from "next-auth/react"
 
 export default function Header() {
-
-  const [session, loading] = useSession();
+  const { data: session } = useSession()
 
   let button;
 
