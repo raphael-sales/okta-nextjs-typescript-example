@@ -8,7 +8,8 @@ const options = {
     OktaProvider({
       clientId: process.env.OKTA_CLIENTID,
       clientSecret: process.env.OKTA_CLIENTSECRET,
-      issuer: process.env.OKTA_ISSUER
+      issuer: process.env.OKTA_ISSUER,
+      checks: ["pkce", "state"],
     }),
     // ...add more providers here
   ],
